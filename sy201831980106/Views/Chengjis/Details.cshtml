@@ -1,0 +1,58 @@
+﻿@model sy201831980106.Models.Chengji
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Chengji</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Xueshengxuehao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Xueshengxuehao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Xueshengxingming)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Xueshengxingming)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Xueshengxingbie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Xueshengxingbie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kechengmingcheng)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kechengmingcheng)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Kechengchengji)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kechengchengji)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Xuhao }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

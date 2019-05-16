@@ -1,0 +1,57 @@
+﻿@model IEnumerable<sy201831980106.Models.Chengji>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Xueshengxuehao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Xueshengxingming)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Xueshengxingbie)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kechengmingcheng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kechengchengji)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Xueshengxuehao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Xueshengxingming)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Xueshengxingbie)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kechengmingcheng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kechengchengji)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Xuhao }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Xuhao }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Xuhao })
+        </td>
+    </tr>
+}
+
+</table>
